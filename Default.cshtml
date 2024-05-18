@@ -3,18 +3,20 @@
 @using ThreeHundredRepro
 @model ThreeHundredRepro.WarningModal
 
-@if (true)
-{
-     <partial name="@string.Empty" 
-             model='@new WarningModal() 
+<div>
+    @if (true)
+    {
+        <partial name="@string.Empty"
+                 model='@new WarningModal()
 {
                     ModalTitle = Model.ModalTitle,
                     Message = Model.Message,
                     ConfirmUrl = Url.Action(),
                     ModalId = "Constant"
 }' />
-       @*          {
-                    
-                    Message = "There are still some outstanding review points for this job, are you sure you want to export the trial balances?"
-                 }' /> *@
-}
+        @*          {
+
+    Message = "There are still some outstanding review points for this job, are you sure you want to export the trial balances?"
+    }' /> *@
+    }
+</div>
