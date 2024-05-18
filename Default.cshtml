@@ -5,9 +5,9 @@
 @if (true)
 {
      <partial name="Test" 
-             model='@new WarningModal()' />
+             model='@new WarningModal() { ModalId = "outstandingReviewPointsWarningModal" }' />
        @*          {
-                    ModalId = "outstandingReviewPointsWarningModal",
+                    ,
                     ModalTitle = "Export Trial Balance",
                     Message = "There are still some outstanding review points for this job, are you sure you want to export the trial balances?"
                  }' /> *@
