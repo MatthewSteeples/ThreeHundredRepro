@@ -4,7 +4,7 @@
 @model ThreeHundredRepro.WarningModal
 
 <div>
-    @if (true)
+    @if (Model.BoolProperty)
     {
         <partial name="@string.Empty"
                  model='@new WarningModal()
@@ -14,9 +14,6 @@
                     ConfirmUrl = Url.Action(),
                     ModalId = "Constant"
 }' />
-        @*          {
-
-    Message = "There are still some outstanding review points for this job, are you sure you want to export the trial balances?"
-    }' /> *@
+        
     }
 </div>
