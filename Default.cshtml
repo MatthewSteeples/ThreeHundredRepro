@@ -11,9 +11,37 @@
 {
                     ModalTitle = Model.ModalTitle,
                     Message = Model.Message,
-                    ConfirmUrl = Url.Action(),
+                    ConfirmUrl = Url.Action(string.Join(",", "1", "2")),
                     ModalId = "Constant"
 }' />
-        
+
+    }
+
+    @if (Model.BoolProperty)
+    {
+        if (Model.BoolProperty)
+        {
+            <partial name="@string.Empty"
+                     model='@new WarningModal()
+{
+                    ModalTitle = Model.ModalTitle,
+                    Message = Model.Message,
+                    ConfirmUrl = Url.Action(string.Join(",", "1", "2")),
+                    ModalId = "Constant"
+}' />
+        }
+    }
+
+    @if (Model.BoolProperty)
+    {
+        <partial name="@string.Empty"
+                 model='@new WarningModal()
+{
+                    ModalTitle = Model.ModalTitle,
+                    Message = Model.Message,
+                    ConfirmUrl = Url.Action(string.Join(",", "1", "2")),
+                    ModalId = "Constant"
+}' />
+
     }
 </div>
