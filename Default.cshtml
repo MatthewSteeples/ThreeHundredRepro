@@ -1,14 +1,14 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @using ThreeHundredRepro
+@model ThreeHundredRepro.WarningModal
 
 @if (true)
 {
      <partial name="Test" 
              model='@new WarningModal() 
 {
-ModalId = "outstandingReviewPointsWarningModal",
-                    ModalTitle = "Export Trial Balance"
+                    ModalTitle = Model.ModalTitle
 }' />
        @*          {
                     
