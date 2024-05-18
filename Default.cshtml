@@ -3,14 +3,11 @@
 
 @using ThreeHundredRepro
 @model ThreeHundredRepro.DefaultModel
-@{
-}
 
 <partial name="Test"
          model='@new WarningModal
                  {
                     ModalId = "outstandingReviewPointsWarningModal",
                     ModalTitle = "Export Trial Balance",
-                    Message = "There are still some outstanding review points for this job, are you sure you want to export the trial balances?",
-                    
+                    Message = "There are still some outstanding review points for this job, are you sure you want to export the trial balances?"
                  }' />
