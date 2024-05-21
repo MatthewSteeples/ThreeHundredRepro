@@ -3,45 +3,6 @@
 @using ThreeHundredRepro
 @model ThreeHundredRepro.WarningModal
 
-<div>
-    @if (Model.BoolProperty)
-    {
-        <partial name="@string.Empty"
-                 model='@new WarningModal()
-{
-                    ModalTitle = Model.ModalTitle,
-                    Message = Model.Message,
-                    ConfirmUrl = Url.Action(string.Join(",", "1", "2")),
-                    ModalId = "Constant"
-}' />
+<partial name="Test"
+         model='@new WarningModal(ViewData["Title"].ToString() + "thi, ngs", "Te, st.", "Foo")' />
 
-    }
-
-    @if (Model.BoolProperty)
-    {
-        if (Model.BoolProperty)
-        {
-            <partial name="@string.Empty"
-                     model='@new WarningModal()
-{
-                    ModalTitle = Model.ModalTitle,
-                    Message = Model.Message,
-                    ConfirmUrl = Url.Action(string.Join(",", "1", "2")),
-                    ModalId = "Constant"
-}' />
-        }
-    }
-
-    @if (Model.BoolProperty)
-    {
-        <partial name="@string.Empty"
-                 model='@new WarningModal()
-{
-                    ModalTitle = Model.ModalTitle,
-                    Message = Model.Message,
-                    ConfirmUrl = Url.Action(string.Join(",", "1", "2")),
-                    ModalId = "Constant"
-}' />
-
-    }
-</div>
