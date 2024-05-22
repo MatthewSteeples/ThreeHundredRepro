@@ -13,6 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         dotnet: [ '8.0.205', '8.0.300' ]
     name: Dotnet ${{ matrix.dotnet }} sample
