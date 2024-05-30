@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        dotnet: [ '8.0.205', '8.0.300', '8.0.301' ]
+        dotnet: [ '8.0.205', '8.0.300', '8.0.301', '9.0.100-preview.5.24253.17', '9.0.100-preview.6.24279.15' ]
     name: Dotnet ${{ matrix.dotnet }} sample
     steps:
       - uses: actions/checkout@v4
